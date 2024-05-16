@@ -1,5 +1,5 @@
 import HeroSection from "@/components/HeroSection";
-import FloatingNavDemo from "@/components/FloatingNavDemo";
+
 import { Roboto_Mono } from "next/font/google";
 import { Roboto_Slab } from "next/font/google";
 import Navbar1 from "@/components/Navbar-in";

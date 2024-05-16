@@ -22,26 +22,26 @@ const Navbar1: React.FC = () => {
     const NavData: NavItem[] = [
         {
             id: 1,
-            title: "About us",
-            path: "/#aboutus",
+            title: "About Me",
+            path: "/#aboutme",
             cName: "nav-text",
         },
         {
             id: 2,
-            title: "Job Postings ",
-            path: "/jobs",
+            title: "Skills",
+            path: "/skills",
             cName: "nav-text",
         },
         {
             id: 3,
-            title: "Contact",
-            path: "/#contact",
+            title: "projects",
+            path: "/#projects",
             cName: "nav-text",
         },
         {
             id: 4,
-            title: "Logout",
-            path: "/api/auth/logout",
+            title: "Download CV",
+            path: "",
             cName: "nav-text",
 
         },
