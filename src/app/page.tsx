@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <main className={`${roboto.variable} font-sans`}>
 
-    <FloatingNavDemo/> 
+    {/* <FloatingNavDemo/>  */}
     
     <HeroSection/>
     <div className="w-screen h-screen bg-red-400">
