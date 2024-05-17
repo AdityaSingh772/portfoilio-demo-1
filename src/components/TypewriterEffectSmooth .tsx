@@ -1,6 +1,7 @@
 "use client";
 import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 import { Roboto_Slab } from "next/font/google";
+import Link from "next/link";
 
 const roboto_s = Roboto_Slab({
   subsets: ['latin'],
@@ -67,12 +68,16 @@ export default function TypewriterEffectSmoothDemo() {
       
     </div>
     <div className="flex flex-col md:flex-row space-y-0 md:space-y-0 space-x-0 md:space-x-4 mt-0 pt-0 ">
+      <Link href="https://drive.google.com/drive/folders/1cQqn9BDp96XjK-xny1NYBLYGoSoSlZYg" target="_blank">
       <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-500 w-60 rounded-l-lg border-2 hover:drop-shadow-xl bg-butcol border-secondary hover:border-primary text-secondary hover:text-primary text-sm py-4">
         Download CV
       </button>
+      </Link>
+      <Link href="mailto:workwithracian@gmail.com?" target="_blank">
       <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-500 w-60 rounded-r-lg border-2 hover:drop-shadow-xl bg-pribg border-primary hover:border-secondary hover:bg-butcol text-primary hover:text-secondary text-sm py-4">
         email
       </button>
+      </Link>
   </div>
   </>
   );

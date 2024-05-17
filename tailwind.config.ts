@@ -19,7 +19,7 @@ const config: Config = {
       colors: {
         'primary' : '#66FCF1',
         'secondary' : '#C5C6C7',
-        'pribg' : '#1F2833',
+        'pribg' : '#051B38',
         'secbg' : '#0B0C10',
         'secd' : '#767677',
         'butcol': '#0B0C10',

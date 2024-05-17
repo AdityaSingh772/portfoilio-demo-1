@@ -42,7 +42,7 @@ const Navbar1: React.FC = () => {
         {
             id: 4,
             title: "Download CV",
-            path: "",
+            path: "https://drive.google.com/drive/folders/1cQqn9BDp96XjK-xny1NYBLYGoSoSlZYg",
             cName: "nav-text",
 
         },
@@ -57,7 +57,7 @@ const Navbar1: React.FC = () => {
         <>
             <nav
                 className={
-                    " bg-[#0b0b0b] bg-opacity-5 backdrop-blur-md  border-b-[0.1px] border-gray-600 mx-auto shadow-lg fixed z-50 sm-0 w-full flex text-secondary hero-txt"
+                    " bg-[#0b0b0b] bg-opacity-5 backdrop-blur-md border-b-[0.1px] border-secondary mx-auto shadow-lg fixed z-50 sm-0 w-full flex text-secondary hero-txt"
 
                 }
             >
@@ -82,7 +82,7 @@ const Navbar1: React.FC = () => {
                                 className="justify-between items-center md:text-xl content hover:text-primary  py-4"
                             >
                                 <div className="w-fit">
-                                <Link className="w-fit md:px-7 hidden md:flex " href={item.path} >
+                                <Link className="w-fit md:px-7 hidden md:flex " href={item.path}>
 
                                     <div className="transition ease-in-out delay-150 hover:-translate-y-1 hover:-translate-x-1 duration-500 ">
                                     {item.title}

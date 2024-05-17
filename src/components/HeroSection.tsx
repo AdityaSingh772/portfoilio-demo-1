@@ -1,12 +1,12 @@
-import TypewriterEffectSmoothDemo from "./TypewriterEffectSmooth ";
+import TypewriterEffectSmooth from "./TypewriterEffectSmooth ";
 import Image from "next/image";
 
 
 function HeroSection() {
   return (
-    <div className="bg-pribg min-h-screen flex">
+    <div className="bg-pribg min-h-screen flex border-b-2 border-dotted border-secondary">
       <div className="bg-pribg w-2/3 sm:w-full sm:flex-1 justify-items-center min-h-screen text-left pl-20">
-        <TypewriterEffectSmoothDemo />
+        <TypewriterEffectSmooth />
       </div>
       <div className="bg-pribg w-1/3 sm:w-fullsm:flex-1 h-full min-h-screen flex items-center justify-center">
         <div className="w-fit bg-primary rounded-lg">
