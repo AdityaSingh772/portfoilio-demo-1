@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function HeroSection() {
   return (
-    <div className="bg-black min-h-screen flex">
+    <div className="bg-pribg min-h-screen flex">
       <div className="bg-pribg w-2/3 sm:w-full sm:flex-1 justify-items-center min-h-screen text-left pl-20">
         <TypewriterEffectSmoothDemo />
       </div>

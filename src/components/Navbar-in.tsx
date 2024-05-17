@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-// import { useUser } from "@auth0/nextjs-auth0/client";
+
 
 
 interface NavItem {
@@ -18,23 +18,24 @@ const Navbar1: React.FC = () => {
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
-
+    //object ka array banaya ha idhar
     const NavData: NavItem[] = [
         {
+            
             id: 1,
             title: "About Me",
-            path: "/#aboutme",
+            path: "/#aboutadi",
             cName: "nav-text",
         },
         {
             id: 2,
             title: "Skills",
-            path: "/skills",
+            path: "/#skills",
             cName: "nav-text",
         },
         {
             id: 3,
-            title: "projects",
+            title: "Projects",
             path: "/#projects",
             cName: "nav-text",
         },
@@ -45,6 +46,7 @@ const Navbar1: React.FC = () => {
             cName: "nav-text",
 
         },
+        
 
 
     ];
@@ -55,38 +57,51 @@ const Navbar1: React.FC = () => {
         <>
             <nav
                 className={
-                    " bg-[#0b0b0b] bg-opacity-5 backdrop-blur-md  border-b-[0.1px] border-gray-600 mx-auto shadow-lg fixed z-50 sm-0 w-full flex   text-gray-400 hero-txt"
+                    " bg-[#0b0b0b] bg-opacity-5 backdrop-blur-md  border-b-[0.1px] border-gray-600 mx-auto shadow-lg fixed z-50 sm-0 w-full flex text-secondary hero-txt"
 
                 }
             >
-                {/* <div className="m-3 hidden md:flex">
-          <Link href="/">
-            <img
-              src="/logo1.png"
-              alt="logo"
-              className="w-4 h-1 md:w-36 md:h-10 cursor-pointer"
-            />
-          </Link>
-        </div> */}
-                <div className="mx-auto md:flex hidden justify-center min-h-fit">
+                {/* here the navbar for big screen */}
+                <div className="mx-auto md:flex hidden min-h-fit">
+                    <div className="justify-items-start">
+                    <Link href="/">
+                            <Image
+                                src="/A.png"
+                                alt="logo"
+                                className=" cursor-pointer ml-2 mt-2"
+                                width={54}
+                                height={54}
+                            />
+                        </Link>
+                        </div>
+                    <div className="flex flex-row justify-items-end">
                     {NavData.map((item) => {
                         return (
                             <div
                                 key={item.id}
-                                className="justify-between items-center md:text-xl content hover:text-violet-400  py-4"
+                                className="justify-between items-center md:text-xl content hover:text-primary  py-4"
                             >
-                                <Link className="md:px-7 hidden md:flex " href={item.path} >
+                                <div className="w-fit">
+                                <Link className="w-fit md:px-7 hidden md:flex " href={item.path} >
+
+                                    <div className="transition ease-in-out delay-150 hover:-translate-y-1 hover:-translate-x-1 duration-500 ">
                                     {item.title}
+                                    </div>
                                 </Link>
+                                </div>
                             </div>
                         );
                     })}
                 </div>
-                <div className="w-screen md:hidden flex flex-col ">
+                </div>
+                {/* Navbar for big screen ends heer */}
+
+                {/* navbar with burger */}
+                <div className="w-full md:hidden flex flex-col ">
                     <div className="flex  justify-between m-2  md:hidden">
                         <Link href="/">
                             <Image
-                                src="/logo1.png"
+                                src="/A.png"
                                 alt="logo"
                                 className=" cursor-pointer ml-2 mt-2"
                                 width={54}
@@ -138,7 +153,7 @@ const Navbar1: React.FC = () => {
                         </button>
                     </div>
                     <div>
-                        <div className="flex md:hidden w-screen absolute bg-[#FFD1E3] roboto bg-opacity-70 ">
+                        <div className="flex md:hidden w-screen absolute bg-secondary roboto bg-opacity-50 backdrop-blur-sm  ">
                             {isMenuOpen ? (
                                 <div className="flex flex-col justify-center  gap-8 items-center text-center w-full h-screen  ">
                                     {NavData.map((item, index) => {
@@ -150,7 +165,7 @@ const Navbar1: React.FC = () => {
                                                 style={{ transitionDuration: `${400 + index * 100}ms` }}
                                             >
                                                 <Link
-                                                    className=" text-[#392467] roboto text-3xl"
+                                                    className=" text-butcol roboto text-3xl border-b-2  hover:border-primary"
                                                     onClick={toggleMenu}
                                                     href={item.path}
                                                 >

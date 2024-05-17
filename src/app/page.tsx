@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import { Roboto_Mono } from "next/font/google";
 import { Roboto_Slab } from "next/font/google";
 import Navbar1 from "@/components/Navbar-in";
+import AboutAdi from "@/components/About";
 
 const roboto = Roboto_Mono({
   subsets: ['latin'],
@@ -24,9 +25,7 @@ export default function Home() {
     <Navbar1/>
     
     <HeroSection/>
-    <div className="w-full h-screen bg-red-400">
-        hello
-    </div>
+    <AboutAdi/>
     </main>
       
     
