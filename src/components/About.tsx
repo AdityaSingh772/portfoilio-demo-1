@@ -7,7 +7,7 @@ import { faGears, faListCheck, faUserGraduate } from '@fortawesome/free-solid-sv
 function AboutAdi() {
     return (
         <>
-            <div className='aboutus-bg min-h-screen pb-16 pt-16 bg-secbg border-b-2 border-dotted border-secondary' id='aboutadi'>
+            <div className='aboutus-bg min-h-screen md:pb-16 pb-8 md:pt-16 pt-8 bg-secbg border-b-2 border-dotted border-secondary' id='aboutadi'>
                 <div className="textJS flex justify-center font-bold text-3xl md:text-5xl hover:text-primary text-transparent bg-clip-text bg-secondary text-secondary">
                     About Me
                 </div>
@@ -42,7 +42,7 @@ function AboutAdi() {
                         <div className='flex flex-col w-full justify-center z-10'>
                             <div className="fontJS-subheading text-primary poppins text-xl md:text-2xl"><span className='text-secondary'>2. </span> Technical Expertise</div>
                             <div className='roboto text-secondary text-justify text-sm md:text-base'>
-                                Proficient in Java, C, and Python, I specialize in the MERN stack. Through hands-on experience, I have mastered MongoDB, Express.js, Node.js, React js, Next js, Rest APIs, etc., enabling me to build robust 
+                                Proficient in Java, C, and Python, I specialize in the MERN stack. Through hands-on experience, I have mastered MongoDB, Express.js, Node.js, React.js, Next.js, Rest APIs, etc., enabling me to build robust 
                                 and responsive web applications. This technical expertise allows me to tackle complex challenges with confidence and deliver innovative solutions to real-world problems. I have
                                 proficiency in problem-solving also. I have solved more than 400 problems of Data Structures and algorithms and over 50 problems of SQL throughout different coding platforms.
                             </div>
