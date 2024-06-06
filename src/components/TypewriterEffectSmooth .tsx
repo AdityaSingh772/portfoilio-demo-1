@@ -62,7 +62,7 @@ export default function TypewriterEffectSmoothDemo() {
 
       <p className="text-secondary text-lg sm:text-base mb-0 pb-0 pt-10 w-1/2">
       
-      Venturing through the labyrinth of backend development, I am Aditya, a software engineering student conjuring digital realms within the vast landscape of web projects.
+      Venturing through the labyrinth of Full Stack Web development, I am Aditya, a software engineering student conjuring digital realms within the vast landscape of web projects.
       
       </p>
       

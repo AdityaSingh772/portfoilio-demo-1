@@ -7,7 +7,7 @@ import { faGears, faListCheck, faUserGraduate } from '@fortawesome/free-solid-sv
 function AboutAdi() {
     return (
         <>
-            <div className='aboutus-bg min-h-screen md:pb-16 pb-8 md:pt-16 pt-8 bg-secbg border-b-2 border-dotted border-secondary' id='aboutadi'>
+            <div className='min-h-screen md:pb-16 pb-8 md:pt-16 pt-8 bg-secbg border-b-2 border-dotted border-secondary' id='aboutadi'>
                 <div className="textJS flex justify-center font-bold text-3xl md:text-5xl hover:text-primary text-transparent bg-clip-text bg-secondary text-secondary">
                     About Me
                 </div>

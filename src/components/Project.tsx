@@ -78,7 +78,7 @@ const Projects: React.FC = () => {
 
   return (
     <div id='projects' className="py-12 px-4 bg-secbg min-w-screen mx-0 border-b-2 border-dotted border-secondary">
-      <div className="transition ease-in-out delay-150 mb-16 textJS flex justify-center font-bold text-3xl hover:drop-shadow-xl hover:text-primary text-transparent bg-clip-text bg-secondary text-secondary">Projects</div>
+      <div className="flex justify-center py-[2.0rem] pb-[4rem] font-bold text-3xl md:text-5xl hover:text-primary text-transparent bg-clip-text bg-secondary text-secondary">Projects</div>
       <div className="flex flex-wrap mx-14 bg-secbg">
         {skillChunks.map((chunk, chunkIndex) => (
           <div key={chunkIndex} className="flex flex-wrap w-full">
