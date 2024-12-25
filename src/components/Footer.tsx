@@ -87,7 +87,7 @@ export default function Footer() {
 
                 <div className="h-1/3 flex justify-center sm:justify-between items-center w-full mt-4 sm:mt-0">
                     <span className="text-primary font-extralight text-center md:text-[1rem] text-[0.8rem]">
-                        <span className="text-secondary">2024❤️</span> &#169; Aditya Singh. Designed and built by Aditya.
+                        <span className="text-secondary">2025</span> &#169; Aditya Singh. Designed and built with ❤️ by Aditya.
                     </span>
                 </div>
 
